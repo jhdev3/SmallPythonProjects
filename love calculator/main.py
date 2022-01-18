@@ -14,6 +14,7 @@ name2 = input("What is their name? \n")
 
 true = 0
 love = 0
+combinedNames = name1 + name2
 def lettersInName(name, word):
     numberOfTimes = 0
     for c in name:
@@ -22,10 +23,10 @@ def lettersInName(name, word):
                 numberOfTimes += 1
     return numberOfTimes      
 
-love += lettersInName(name1.casefold(), "love")
-love += lettersInName(name2.casefold(), "love")
-true += lettersInName(name1.casefold(), "true")
-true += lettersInName(name2.casefold(), "true")
+#could use string.count("letter")
+
+love += lettersInName(combinedNames.casefold(), "love")
+true += lettersInName(combinedNames.casefold(), "true")
 
 trueLove = int(f"{true}{love}")
 
