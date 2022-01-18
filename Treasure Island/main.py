@@ -41,6 +41,6 @@ if input("You are at a croos road. Where do you want to go? Type \"left\" or \"r
     else:
         print("Shark found you and ate you up, GAME OVER")
 else:
-    print("You fell in a hole and died, Game Over")
+    print("You fell into a hole and died, Game Over")
 
 
