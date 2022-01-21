@@ -18,18 +18,15 @@ i = 0
 while i < lenght_password:
     order = random.randint(1,3)
     if order == 1 and nr_symbols > 0:
-        r_symobol = random.randint(0, len(symbols)-1)
-        password += symbols[r_symobol]
+        password += random.choice(symbols)
         nr_symbols -= 1
         i += 1
     elif order == 2 and nr_numbers > 0:
-        r_number = random.randint(0, len(numbers)-1)
-        password += numbers[r_number]
+        password += random.choice(numbers)
         nr_numbers -= 1
         i += 1
     elif order == 3 and nr_letters > 0:
-        r_letter = random.randint(0, len(letters)-1)
-        password += letters[r_letter]
+        password += random.choice(letters)
         nr_letters -= 1
         i += 1
     
