@@ -34,7 +34,8 @@ while end_of_game and lives != 0:
     end_of_game = "_" in display_blank
 
 if lives == 0:
-    print("You Loose")
+    print(f"You Loose, the word was: {word}")
+    
 else:
     print("You Win")
 
